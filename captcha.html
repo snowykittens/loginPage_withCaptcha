@@ -26,7 +26,6 @@
 </div>
 </div>
 <script type="text/javascript">
-  var first = 1;
   function cap(){
     var alpha = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V'
                  ,'W','X','Y','Z','1','2','3','4','5','6','7','8','9','0','a','b','c','d','e','f','g','h','i',
@@ -42,11 +41,10 @@
                  document.getElementById("capt").value=final;
                }
                function validcap(){
-		if(first==1){
-			var stg1 = 7;
-			first = 9;
-		}else{
-			stg1 = document.getElementById('capt').value;
+		 var stg1 = document.getElementById('capt').value;
+		if( stg1 ){}
+		else {
+			stg1 = 7;
 		}
                 var stg2 = document.getElementById('textinput').value;
                 if(stg1==stg2){
