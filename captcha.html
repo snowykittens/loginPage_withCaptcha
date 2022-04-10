@@ -43,10 +43,11 @@
                 var stg1 = document.getElementById('capt').value;
                 var stg2 = document.getElementById('textinput').value;
                 if(stg1==stg2){
-                  alert("Form is validated Succesfully");
+                  alert("Success! Press ok to be redirected!");
+			<meta http-equiv = "refresh" content = "1; url = https://starkitty.github.io/starlounge/Home.html" />
                   return true;
                 }else{
-                  alert("Please enter a valid captcha");
+                  alert("Verification failed! Try again!");
                   return false;
                 }
                }
