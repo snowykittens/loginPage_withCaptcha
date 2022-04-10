@@ -41,7 +41,13 @@
                  document.getElementById("capt").value=final;
                }
                function validcap(){
-                var stg1 = document.getElementById('capt').value;
+		var first = 1;
+		if (first==1){
+			var stg1 = 8;
+			first = first + 1;
+		}else{
+			var stg1 = document.getElementById('capt').value;
+		}
                 var stg2 = document.getElementById('textinput').value;
                 if(stg1==stg2){
                   alert("Success! Press ok to be redirected!");
